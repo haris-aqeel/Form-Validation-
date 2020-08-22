@@ -92,7 +92,7 @@ function password() {
 
 function contact() {
     var mobilePhone = document.getElementById('inputNumber');
-    if (mobilePhone.value == "" || mobilePhone.length !==11){
+    if (mobilePhone.value == "" || (mobilePhone.value).length !==11){
         mobilePhone.classList.add('is-invalid');        
     }else{
         mobilePhone.classList.remove('is-invalid');
