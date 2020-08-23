@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>FORM VALIDATION</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 
 </head>
 <body>
@@ -34,33 +34,33 @@
         <div class="container my-5">
         <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="John">
+            <input type="text" class="form-control" id="name" name="name" placeholder="John" onblur="fname()">
         </div>
         <div class="form-group">
             <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="zyz@example.com" name="address">
+            <input type="text" class="form-control" id="inputAddress" placeholder="zyz@example.com" name="address1" onblur='address()'>
         </div>
         <!-- date of birth -->
         <div class="form-group">
           <label for="inputEmail4">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Must include @ sign">
+          <input type="email" class="form-control" id="inputEmail4" name="email1" placeholder="Must include @ sign" onblur="email()">
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="cnic">CNIC</label>
-                <input type="number" class="form-control" id="cnic" name="cnic" placeholder ="Enter 13 digit CNIC number">
+                <input type="number" class="form-control" id="cnic" name="cnic" placeholder ="Enter 13 digit CNIC number" onblur="fcnic()">
                 <!-- max length =13 -->
             </div>
             <div class="form-group col-md-6">
                 <label for="inputZip1">Date Of Birth</label>
-                <input type="date" class="form-control" id="inputZip1" name="dateOfBirth">
+                <input type="date" class="form-control" id="inputZip1" name="dateOfBirth1" onblur="dateOfBirth()">
             </div>
         </div>
         
         <div class="form-row">
             <div class="form-group col-md-4">
               <label for="inputState">City</label>
-              <select id="inputState" class="form-control" name="city">
+              <select id="inputState" class="form-control" name="city1" onblur="city()">
                 <option selected value = "">Choose...</option>
                 <option value="karachi">Karachi</option>
                 <option value="hyderabad">Hyderabad</option>
@@ -70,14 +70,14 @@
         </div>
         <div class="form-group col-md-4">
           <label for="inputPassword4">Password</label>
-          <input type="password" class="form-control" id="inputPassword4" placeholder ="Must include numeric && special character " name="password" minlength="6" maxlength="20">
+          <input type="password" class="form-control" id="inputPassword4" placeholder ="Must include numeric && special character " name="password1" minlength="6" maxlength="20" onblur="password()">
         </div>
         
         
           
           <div class="form-group col-md-4">
             <label for="inputNumber">Mobile Number</label>
-            <input type="number" class="form-control" placeholder = "Must include 11 numbers" id="inputNumber" name="mobilenumber">
+            <input type="number" class="form-control" placeholder = "Must include 11 numbers" id="inputNumber" name="mobilenumber1" onblur="contact()">
             <!-- max length =13 -->
           </div>
         </div>
@@ -107,6 +107,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-    <script src="app.js"></script>
 
 </html>

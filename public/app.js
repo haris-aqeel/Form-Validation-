@@ -1,10 +1,10 @@
 function handleSubmit(e){
     // if (name()  &&    address()&&    email()&&    cnic()&&    dateOfBirth()&&    city()&&    password() &&   contact();)
     e.preventDefault();
-    name();
+    fname();
     address();
     email();
-    cnic();
+    fcnic();
     dateOfBirth();
     city();
     password();
@@ -13,7 +13,7 @@ function handleSubmit(e){
 
 
 
-function name() {
+function fname() {
     var names = document.getElementById('name');
     if (names.value == "" ){
         names.classList.add('is-invalid');
@@ -50,7 +50,7 @@ function email() {
 }
 
 
-function cnic(){
+function fcnic(){
     var cnics = document.getElementById('cnic');
     var cnicValue = cnics.value;
     console.log(cnicValue);
