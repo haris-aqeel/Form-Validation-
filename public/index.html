@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>FORM VALIDATION</title>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyAoks6-MuFF3OAGh0yIdvvZ1R4MoOGTDls",
+        authDomain: "form-validation-d9666.firebaseapp.com",
+        databaseURL: "https://form-validation-d9666.firebaseio.com",
+        projectId: "form-validation-d9666",
+        storageBucket: "form-validation-d9666.appspot.com",
+        messagingSenderId: "846478297548",
+        appId: "1:846478297548:web:308b4ee7f9a0c6e59fb569",
+        measurementId: "G-GBFDM9X9XT"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
     <script src="app.js"></script>
 
 </head>
@@ -38,7 +53,7 @@
         </div>
         <div class="form-group">
             <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="zyz@example.com" name="address1" onblur='address()'>
+            <input type="text" class="form-control" id="inputAddress" placeholder="115 /1 K area Korangi" name="address1" onblur='address()'>
         </div>
         <!-- date of birth -->
         <div class="form-group">
@@ -77,7 +92,7 @@
           
           <div class="form-group col-md-4">
             <label for="inputNumber">Mobile Number</label>
-            <input type="number" class="form-control" placeholder = "Must include 11 numbers" id="inputNumber" name="mobilenumber1" onblur="contact()">
+            <input type="number" class="form-control" placeholder = "Length of Number must be 11 numbers" id="inputNumber" name="mobilenumber1" onblur="contact()">
             <!-- max length =13 -->
           </div>
         </div>
